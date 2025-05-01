@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body bgcolor="#D70F64">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+       <img class="img" src="./download-removebg-preview.png" alt="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a style="font-weight: bolder;" href="./indexadmin.html" class="nav-link text-white active">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a style="font-weight: bolder;" href="#" class="nav-link text-white">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a style="font-weight: bolder;" href="#" class="nav-link text-white">Users</a>
+                </li>
+                <li class="nav-item">
+                    <a style="font-weight: bolder;" href="#" class="nav-link text-white">Settings</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <button onclick="log()" id="log" class="log">Logout</button>
+</nav>
+  
+    <div class="main">
+      <h1>Admin Dashboard</h1><br>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Products</button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Product</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <!-- Restaurant Name -->
+                <div class="mb-3">
+                  <label for="res" class="form-label">Restaurant Name:</label>
+                  <input type="text" class="form-control" id="res" required>
+                </div>
+
+                <!-- Product Name -->
+                <div class="mb-3">
+                  <label for="prod" class="form-label">Product Name:</label>
+                  <input type="text" class="form-control" id="prod" required>
+                </div>
+
+                <!-- Product Price -->
+                <div class="mb-3">
+                  <label for="price" class="form-label">Product Price:</label>
+                  <input type="text" class="form-control" id="price" required>
+                </div>
+
+                <!-- Location -->
+                <div class="mb-3">
+                  <label for="location" class="form-label">Location:</label>
+                  <input type="text" class="form-control" id="location" required>
+                </div>
+
+                <!-- Delivery Price -->
+                <div class="mb-3">
+                  <label for="delivery" class="form-label">Delivery Price:</label>
+                  <input type="text" class="form-control" id="delivery" required>
+                </div>
+
+                <!-- Image URL -->
+                <div class="mb-3">
+                  <label for="img" class="form-label">Image URL:</label>
+                  <input type="text" class="form-control" id="img" required>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button onclick="btn()" id="btn" type="button" class="btn btn-primary">Add Product</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="read1" id="read1">
+       
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Custom JS File -->
+    
+    <script type="module" src="admin.js"></script>
+    
+</body>
+</html>

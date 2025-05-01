@@ -1,0 +1,178 @@
+/* ========== Global Reset ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ========== Navbar ========== */
+.navbar {
+    background-color: #D70F64 !important;
+    padding: 10px 20px;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 0;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    font-size: 1.1rem;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #D70F64 !important;
+    background-color: white !important;
+    border-radius: 5px;
+}
+
+.navbar .navbar-toggler {
+    border-color: white !important;
+    background-color: #D70F64 !important;
+    color: white !important;
+}
+
+.navbar-toggler-icon {
+    font-weight: bolder;
+}
+
+/* Stack navbar items vertically on small screens */
+@media (max-width: 768px) {
+    .navbar .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav .nav-item {
+        padding: 5px 0;
+    }
+}
+
+/* ========== Logo Image ========== */
+.img {
+    height: auto;
+    width: 90px;
+    margin-right: 40px;
+}
+
+/* ========== Login Button ========== */
+.log {
+    border: white solid 4px;
+    background-color: #D70F64;
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-weight: 1000;
+    border-radius: 10px;
+}
+.log:hover{
+    background-color: white;
+    color: #D70F64;
+    border: #D70F64 solid 4px;
+    width: 160px;
+    height: 50px;
+}
+/* ========== Main Content Block ========== */
+.main {
+    margin: 40px auto;
+    font-size: large;
+    background-color: #D70F64;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: fit-content;
+    color: aliceblue;
+    max-width: 90%;
+}
+
+.main:hover {
+    background-color: white;
+    color: #D70F64;
+}
+
+/* ========== Product Card ========== */
+.read {
+    margin: 20px auto;
+    font-size: large;
+    background-color: #D70F64;
+    padding: 10px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.read:hover {
+    background-color: white;
+    color: #D70F64;
+}
+
+/* ========== Product Container ========== */
+.read1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+/* ========== Modal ========== */
+.modal-dialog {
+    margin-top: 10vh;
+    z-index: 2000;
+}
+
+/* ========== Responsive Overrides ========== */
+@media (max-width: 768px) {
+    .main {
+        font-size: medium;
+        padding: 10px 15px;
+    }
+
+    .read {
+        font-size: medium;
+        padding: 10px;
+    }
+
+    .log {
+        width: 130px;
+        height: 38px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        font-size: small;
+        text-align: center;
+    }
+
+    .read {
+        font-size: small;
+    }
+
+    .img {
+        width: 70px;
+        margin-right: 20px;
+    }
+
+    .log {
+        width: 120px;
+        height: 35px;
+        font-size: 13px;
+    }
+
+    .navbar .nav-link {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,176 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Navbar Styling */
+.pink-navbar {
+  background-color: #d70f64;
+  padding: 12px 20px;
+}
+
+.navbar-brand img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.navbar-brand span {
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+.dashboard h2 {
+  color: #d70f64;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  color: #d70f64;
+  font-weight: 600;
+}
+
+/* Login Button */
+.log {
+  border: white solid 4px;
+  background-color: #D70F64;
+  color: white;
+  width: 150px;
+  height: 40px;
+  font-weight: 1000;
+  border-radius: 10px;
+}
+
+.log:hover {
+  background-color: white;
+  color: #D70F64;
+  border: #D70F64 solid 4px;
+  width: 160px;
+  height: 50px;
+}
+
+/* Product Card */
+.read33 {
+  margin: 20px auto;
+  font-size: large;
+  background-color: #D70F64;
+  padding: 10px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  color: white;
+}
+
+.read33:hover {
+  background-color: white;
+  color: #D70F64;
+}
+
+/* Product Container */
+.userdiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.img {
+  height: auto;
+  width: 90px;
+  margin-right: 40px;
+}
+
+#cartIcon {
+  position: relative;
+  font-size: 1.5rem;
+}
+
+#orderNumber {
+  font-size: 0.75rem;
+  padding: 0.2em 0.6em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-brand span {
+      font-size: 1.2rem;
+  }
+
+  .navbar-nav .nav-link {
+      margin-left: 10px;
+      font-size: 0.9rem;
+  }
+
+  .log {
+      width: 130px;
+      height: 35px;
+      font-size: 0.9rem;
+  }
+
+  .log:hover {
+      width: 140px;
+      height: 45px;
+  }
+
+  .read33 {
+      font-size: medium;
+      width: 95%;
+  }
+
+  .userdiv {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .img {
+      width: 70px;
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand img {
+      width: 30px;
+      height: 30px;
+  }
+
+  .dashboard h2 {
+      font-size: 1.5rem;
+  }
+
+  .card-title {
+      font-size: 1.1rem;
+  }
+
+  .log, .log:hover {
+      width: 120px;
+      height: 35px;
+      font-size: 0.8rem;
+  }
+
+  .read33 {
+      padding: 8px;
+      font-size: small;
+  }
+}
